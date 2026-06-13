@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suryansh Seth — Writing / Drawing Log</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Page-specific: Drawing Log / Table of Contents */
+    .log-list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+    .log-row {
+      display: grid;
+      grid-template-columns: 110px 1fr 80px;
+      gap: 2rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(149, 188, 219, 0.2);
+      align-items: baseline;
+    }
+    .log-row:first-child { border-top: 1px solid rgba(149, 188, 219, 0.2); }
+    
+    .log-date {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+    }
+    .log-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .log-title a {
+      color: var(--paper);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .log-title a:hover { color: var(--accent); }
+    
+    .log-excerpt {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.5;
+      max-width: 60ch;
+    }
+    .log-link {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      text-align: right;
+      transition: opacity 0.2s;
+    }
+    .log-link:hover { opacity: 0.7; }
+
+    @media (max-width: 720px) {
+      .log-row {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        padding: 1.5rem 0;
+      }
+      .log-link { text-align: left; margin-top: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="crop-mark crop-tl"></div>
+  <div class="crop-mark crop-tr"></div>
+  <div class="crop-mark crop-bl"></div>
+  <div class="crop-mark crop-br"></div>
+
+  <header class="title-block fade-up delay-1">
+    <div class="monogram-box">SS</div>
+    <div class="meta-info">
+      <div class="meta-row">
+        <span class="mono meta-label">PROJECT</span>
+        <span class="mono-strong meta-value">SURYANSH SETH</span>
+      </div>
+      <div class="meta-row">
+        <span class="mono meta-label">DWG NO.</span>
+        <span class="mono-strong meta-value">002 / REV. A</span>
+      </div>
+      <div class="meta-row">
+        <span class="mono meta-label">STATUS</span>
+        <span class="stamp">UNDER CONSTRUCTION</span>
+      </div>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Work</a>
+        <a href="library.html" class="nav-link active">Writing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="fade-up delay-2">
+      <h1>Drawing Log<br>// Writing</h1>
+      <p class="mono" style="margin-top: 1rem; max-width: 60ch;">
+        Index of drafted thoughts. Entries are logged chronologically. 
+        Revisions and addendums may apply.
+      </p>
+    </section>
+
+    <div class="dim-line fade-up delay-3">
+      <span>Section 01 // Registered Entries</span>
+    </div>
+
+    <section class="log-list fade-up delay-4">
+      <!-- Entry 1 -->
+      <article class="log-row">
+        <div class="log-date">2026-06-10</div>
+        <div>
+          <h2 class="log-title"><a href="post-template.html">On the aesthetics of unfinished things</a></h2>
+          <p class="log-excerpt">Why blueprints and wireframes often hold more structural honesty than the final rendered product. A brief note on drafting tables.</p>
+        </div>
+        <a href="post-template.html" class="log-link">Read &rarr;</a>
+      </article>
+
+      <!-- Entry 2 -->
+      <article class="log-row">
+        <div class="log-date">2026-05-22</div>
+        <div>
+          <h2 class="log-title"><a href="index.html">Grid systems and cognitive load</a></h2>
+          <p class="log-excerpt">Exploring how rigid 20px minor grids influence reading patterns and information hierarchy in technical documentation.</p>
+        </div>
+        <a href="index.html" class="log-link">Read &rarr;</a>
+      </article>
+
+      <!-- Entry 3 -->
+      <article class="log-row">
+        <div class="log-date">2026-04-15</div>
+        <div>
+          <h2 class="log-title"><a href="index.html">Notes on typography at low contrast</a></h2>
+          <p class="log-excerpt">Legibility thresholds when rendering cream text on deep blue backgrounds. Field observations from late-night drafting sessions.</p>
+        </div>
+        <a href="index.html" class="log-link">Read &rarr;</a>
+      </article>
+
+      <!-- Entry 4 -->
+      <article class="log-row">
+        <div class="log-date">2026-03-01</div>
+        <div>
+          <h2 class="log-title"><a href="index.html">The myth of the clean slate</a></h2>
+          <p class="log-excerpt">There is no such thing as a blank page. Every project inherits the ghost geometry of the ones that came before it.</p>
+        </div>
+        <a href="index.html" class="log-link">Read &rarr;</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer-block fade-up delay-5">
+    <div class="meta-info" style="align-items: flex-start;">
+      <div class="meta-row" style="border: none; padding: 0;">
+        <span class="mono meta-label">SCALE</span>
+        <span class="mono-strong meta-value">1:1</span>
+      </div>
+      <div class="meta-row" style="border: none; padding: 0; margin-top: 0.25rem;">
+        <span class="mono meta-label">DRAWN BY</span>
+        <span class="mono-strong meta-value">S.S.</span>
+      </div>
+      <div class="meta-row" style="border: none; padding: 0; margin-top: 0.25rem;">
+        <span class="mono meta-label">DATE</span>
+        <span class="mono-strong meta-value">2026</span>
+      </div>
+    </div>
+    
+    <nav class="footer-nav">
+      <a href="https://github.com/" target="_blank" rel="noopener">[ Github ]</a>
+      <a href="https://twitter.com/" target="_blank" rel="noopener">[ X ]</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener">[ LinkedIn ]</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

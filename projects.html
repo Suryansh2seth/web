@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suryansh Seth — Projects</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Shared Design System Styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Additional Project-specific micro-styles (tags & links) – extends design tokens -->
+  <style>
+    /* Project tags – mono badges with subtle background */
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0 0.75rem 0;
+    }
+    .project-tag {
+      background: rgba(135, 173, 208, 0.12);
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      padding: 0.2rem 0.65rem;
+      border-radius: 20px;
+      color: var(--muted);
+      text-transform: uppercase;
+      border: 0.5px solid rgba(135, 173, 208, 0.3);
+      transition: all 0.2s ease;
+    }
+    .project-tag:hover {
+      background: rgba(255, 122, 69, 0.15);
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    .project-links {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      align-items: center;
+      border-top: 1px dashed rgba(135, 173, 208, 0.25);
+      padding-top: 0.9rem;
+    }
+    .project-link {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--accent);
+      transition: color 0.2s, border-color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .project-link:hover {
+      color: var(--paper);
+      border-bottom-color: var(--paper);
+    }
+    /* additional placeholder indicator subtle */
+    .placeholder-note {
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+    .cell:hover .placeholder-note {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Corner Crop Marks (L-brackets) -->
+  <div class="crop-mark crop-tl"></div>
+  <div class="crop-mark crop-tr"></div>
+  <div class="crop-mark crop-bl"></div>
+  <div class="crop-mark crop-br"></div>
+
+  <!-- Reusable Header: Title Block (identical to template) -->
+  <header class="title-block fade-up delay-1">
+    <div class="monogram-box">SS</div>
+    <div class="meta-info">
+      <div class="meta-row">
+        <span class="mono meta-label">PROJECT</span>
+        <span class="mono-strong meta-value">SURYANSH SETH</span>
+      </div>
+      <div class="meta-row">
+        <span class="mono meta-label">DWG NO.</span>
+        <span class="mono-strong meta-value">001 / REV. A</span>
+      </div>
+      <div class="meta-row">
+        <span class="mono meta-label">STATUS</span>
+        <span class="stamp">WORKS IN PROGRESS</span>
+      </div>
+      
+      <!-- Navigation: 'Work' is active (Projects page) -->
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link active">Work</a>
+        <a href="library.html" class="nav-link">Writing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Drawing-style heading: Sheet notation + big display "Projects" -->
+    <div class="fade-up delay-2" style="margin-bottom: 1rem;">
+      <div class="mono" style="letter-spacing: 0.2em; margin-bottom: 0.25rem;">SHEET 03 // PROJECT INDEX</div>
+      <h1 style="font-size: clamp(3rem, 8vw, 5rem); margin-top: 0;">PROJECTS</h1>
+    </div>
+
+    <!-- Dimension Line Divider (between heading and project grid) -->
+    <div class="dim-line fade-up delay-3">
+      <span>ACTIVE WORKSET // BUILT & PROTOTYPED</span>
+    </div>
+
+    <!-- Project Grid – Numbered "cell" pattern with badges (reused from design system) -->
+    <div class="cell-grid fade-up delay-4">
+      
+      <!-- PROJECT 01 – placeholder marked clearly -->
+      <article class="cell">
+        <div class="cell-badge">01</div>
+        <h2 class="cell-title">PROJECT ALPHA — REPLACE WITH REAL PROJECT</h2>
+        <p>
+          <span class="placeholder-note">[PLACEHOLDER]</span> — Area reserved for detailed case study. 
+          Responsive web application, design system integration, and technical documentation. 
+          Foundation poured, interactive demo pending.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">Figma</span>
+          <span class="project-tag">CSS Grid</span>
+        </div>
+        <div class="project-links">
+          <a href="index.html" class="project-link">Live Demo (placeholder) →</a>
+          <a href="index.html" class="project-link">Repo / GitHub →</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 02 – placeholder with stack tags -->
+      <article class="cell">
+        <div class="cell-badge">02</div>
+        <h2 class="cell-title">PROJECT BETA — DESIGN TOOL (PLACEHOLDER)</h2>
+        <p>
+          <span class="placeholder-note">[PLACEHOLDER]</span> — Generative design tool / configurator. 
+          Built on three.js and WebGL. Currently in blueprint phase, proof-of-concept repository available.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Three.js</span>
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">WebGL</span>
+          <span class="project-tag">Vite</span>
+        </div>
+        <div class="project-links">
+          <a href="index.html" class="project-link">Prototype (placeholder) →</a>
+          <a href="index.html" class="project-link">Source →</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 03 – placeholder with full-stack indicators -->
+      <article class="cell">
+        <div class="cell-badge">03</div>
+        <h2 class="cell-title">PROJECT GAMMA — DASHBOARD SYSTEM (PLACEHOLDER)</h2>
+        <p>
+          <span class="placeholder-note">[PLACEHOLDER]</span> — Internal dashboard for monitoring 
+          technical metrics. Real-time data visualization, modular architecture, dark mode ready.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Next.js</span>
+          <span class="project-tag">Tailwind</span>
+          <span class="project-tag">D3.js</span>
+          <span class="project-tag">Prisma</span>
+        </div>
+        <div class="project-links">
+          <a href="index.html" class="project-link">Live preview (placeholder) →</a>
+          <a href="index.html" class="project-link">Codebase →</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 04 – placeholder, highlighting design tokens and animation -->
+      <article class="cell">
+        <div class="cell-badge">04</div>
+        <h2 class="cell-title">PROJECT DELTA — COMPONENT LIBRARY (PLACEHOLDER)</h2>
+        <p>
+          <span class="placeholder-note">[PLACEHOLDER]</span> — Reusable component library 
+          compliant with drafting-system guidelines. Storybook integration, fully typed, themeable.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Vue</span>
+          <span class="project-tag">Storybook</span>
+          <span class="project-tag">CSS vars</span>
+          <span class="project-tag">Vitest</span>
+        </div>
+        <div class="project-links">
+          <a href="index.html" class="project-link">Documentation (placeholder) →</a>
+          <a href="index.html" class="project-link">GitHub →</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Optional extra dimension line for spacing and technical emphasis -->
+    <div class="dim-line fade-up delay-5">
+      <span>END OF ACTIVE SHEET /// FURTHER REFERENCES PENDING</span>
+    </div>
+    <div class="muted-text" style="font-family: var(--font-mono); font-size: 0.65rem; text-align: center; margin-top: 1rem; letter-spacing: 0.08em;">
+      ⚡ All projects shown are structural placeholders — replace with actual case studies, URLs and descriptions.
+    </div>
+  </main>
+
+  <!-- Reusable Footer: Title Block (exactly as in template) -->
+  <footer class="footer-block fade-up delay-5">
+    <div class="meta-info" style="align-items: flex-start;">
+      <div class="meta-row" style="border: none; padding: 0;">
+        <span class="mono meta-label">SCALE</span>
+        <span class="mono-strong meta-value">1:1</span>
+      </div>
+      <div class="meta-row" style="border: none; padding: 0; margin-top: 0.25rem;">
+        <span class="mono meta-label">DRAWN BY</span>
+        <span class="mono-strong meta-value">S.S.</span>
+      </div>
+      <div class="meta-row" style="border: none; padding: 0; margin-top: 0.25rem;">
+        <span class="mono meta-label">DATE</span>
+        <span class="mono-strong meta-value">2026</span>
+      </div>
+    </div>
+    
+    <nav class="footer-nav">
+      <a href="https://github.com/" target="_blank" rel="noopener">[ Github ]</a>
+      <a href="https://twitter.com/" target="_blank" rel="noopener">[ X ]</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener">[ LinkedIn ]</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suryansh Seth — Home</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Shared Design System Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Page-specific: Home / Coming Soon */
+    .home-intro {
+      max-width: 60ch;
+      margin-top: 1rem;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .cell-link {
+      display: inline-block;
+      margin-top: 0.85rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--accent);
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .cell-link:hover {
+      color: var(--paper);
+      border-bottom-color: var(--paper);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Corner Crop Marks -->
+  <div class="crop-mark crop-tl"></div>
+  <div class="crop-mark crop-tr"></div>
+  <div class="crop-mark crop-bl"></div>
+  <div class="crop-mark crop-br"></div>
+
+  <!-- Reusable Header: Title Block -->
+  <header class="title-block fade-up delay-1">
+    <div class="monogram-box">SS</div>
+    <div class="meta-info">
+      <div class="meta-row">
+        <span class="mono meta-label">PROJECT</span>
+        <span class="mono-strong meta-value">SURYANSH SETH</span>
+      </div>
+      <div class="meta-row">
+        <span class="mono meta-label">DWG NO.</span>
+        <span class="mono-strong meta-value">000 / REV. A</span>
+      </div>
+      <div class="meta-row">
+        <span class="mono meta-label">STATUS</span>
+        <span class="stamp">UNDER CONSTRUCTION</span>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="projects.html" class="nav-link">Work</a>
+        <a href="library.html" class="nav-link">Writing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="fade-up delay-2">
+      <div class="mono" style="letter-spacing: 0.2em; margin-bottom: 0.25rem;">SHEET 00 // INDEX</div>
+      <h1 style="font-size: clamp(3rem, 8vw, 5rem); margin-top: 0;">SURYANSH SETH</h1>
+      <p class="home-intro">
+        This site is on the drafting table. The structure is in place, the sections are
+        labelled, and the rooms are being built out one at a time. Some pages are further
+        along than others — follow the links below to see what is currently standing.
+      </p>
+    </section>
+
+    <div class="dim-line fade-up delay-3">
+      <span>Section 01 // Site Index</span>
+    </div>
+
+    <section class="cell-grid fade-up delay-4">
+      <article class="cell">
+        <div class="cell-badge">1</div>
+        <h2 class="cell-title">Work</h2>
+        <p>Selected projects, prototypes, and case studies — currently in early drafting stages.</p>
+        <a href="projects.html" class="cell-link">Open sheet &rarr;</a>
+      </article>
+      <article class="cell">
+        <div class="cell-badge">2</div>
+        <h2 class="cell-title">Writing</h2>
+        <p>Notes, essays, and longer-form thoughts, logged chronologically as they're drafted.</p>
+        <a href="library.html" class="cell-link">Open sheet &rarr;</a>
+      </article>
+      <article class="cell">
+        <div class="cell-badge">3</div>
+        <h2 class="cell-title">Contact</h2>
+        <p>Direct line to the drafting table — for inquiries, collaborations, or general notes.</p>
+        <a href="contact.html" class="cell-link">Open sheet &rarr;</a>
+      </article>
+    </section>
+
+    <div class="dim-line fade-up delay-5">
+      <span>END OF SHEET 00 /// MORE SECTIONS PENDING</span>
+    </div>
+  </main>
+
+  <!-- Reusable Footer: Title Block -->
+  <footer class="footer-block fade-up delay-5">
+    <div class="meta-info" style="align-items: flex-start;">
+      <div class="meta-row" style="border: none; padding: 0;">
+        <span class="mono meta-label">SCALE</span>
+        <span class="mono-strong meta-value">1:1</span>
+      </div>
+      <div class="meta-row" style="border: none; padding: 0; margin-top: 0.25rem;">
+        <span class="mono meta-label">DRAWN BY</span>
+        <span class="mono-strong meta-value">S.S.</span>
+      </div>
+      <div class="meta-row" style="border: none; padding: 0; margin-top: 0.25rem;">
+        <span class="mono meta-label">DATE</span>
+        <span class="mono-strong meta-value">2026</span>
+      </div>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="https://github.com/" target="_blank" rel="noopener">[ Github ]</a>
+      <a href="https://twitter.com/" target="_blank" rel="noopener">[ X ]</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener">[ LinkedIn ]</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

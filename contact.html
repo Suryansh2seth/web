@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suryansh Seth — Contact</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Page-specific: Contact Form & Layout */
+    .contact-intro {
+      max-width: 60ch;
+      margin-bottom: 2rem;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin-bottom: 3rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-input {
+      width: 100%;
+      background: rgba(18, 42, 63, 0.4);
+      border: 1px solid rgba(149, 188, 219, 0.3);
+      color: var(--paper);
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      padding: 0.75rem;
+      outline: none;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .form-input:focus {
+      border-color: var(--accent);
+      background: rgba(18, 42, 63, 0.7);
+    }
+
+    textarea.form-input {
+      min-height: 150px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+
+    .form-btn {
+      background: var(--paper);
+      color: var(--bg);
+      border: none;
+      padding: 0.75rem 2rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .form-btn:hover {
+      background: var(--accent);
+    }
+
+    .form-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .form-confirmation {
+      display: none;
+      margin-top: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .contact-grid {
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="crop-mark crop-tl"></div>
+  <div class="crop-mark crop-tr"></div>
+  <div class="crop-mark crop-bl"></div>
+  <div class="crop-mark crop-br"></div>
+
+  <header class="title-block fade-up delay-1">
+    <div class="monogram-box">SS</div>
+    <div class="meta-info">
+      <div class="meta-row">
+        <span class="mono meta-label">PROJECT</span>
+        <span class="mono-strong meta-value">SURYANSH SETH</span>
+      </div>
+      <div class="meta-row">
+        <span class="mono meta-label">DWG NO.</span>
+        <span class="mono-strong meta-value">003 / REV. A</span>
+      </div>
+      <div class="meta-row">
+        <span class="mono meta-label">STATUS</span>
+        <span class="stamp">ACTIVE</span>
+      </div>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Work</a>
+        <a href="library.html" class="nav-link">Writing</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="fade-up delay-2">
+      <h1>Sheet 04 // Contact</h1>
+      <p class="contact-intro" style="margin-top: 1rem;">
+        Direct line to the drafting table. All inquiries are logged, reviewed manually, and responded to within standard business tolerances.
+      </p>
+    </section>
+
+    <div class="dim-line fade-up delay-3">
+      <span>Section 01 // Transmission Form</span>
+    </div>
+
+    <div class="form-container fade-up delay-4">
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name" class="mono form-label">Name / Identifier</label>
+          <input type="text" id="name" name="name" class="form-input" required autocomplete="name">
+        </div>
+        
+        <div class="form-group">
+          <label for="email" class="mono form-label">Email Address</label>
+          <input type="email" id="email" name="email" class="form-input" required autocomplete="email">
+        </div>
+        
+        <div class="form-group">
+          <label for="message" class="mono form-label">Message Payload</label>
+          <textarea id="message" name="message" class="form-input" required></textarea>
+        </div>
+
+        <button type="submit" class="form-btn" id="submit-btn">Transmit Message</button>
+        <div class="form-confirmation" id="form-confirmation">✓ Message noted.</div>
+      </form>
+    </div>
+
+    <div class="dim-line fade-up delay-4">
+      <span>Section 02 // Direct Coordinates</span>
+    </div>
+
+    <section class="cell-grid contact-grid fade-up delay-5">
+      <article class="cell">
+        <div class="cell-badge">1</div>
+        <h2 class="cell-title">Primary Email</h2>
+        <p>
+          <a href="mailto:hello@suryanshseth.com" style="color: var(--paper); text-decoration: none; border-bottom: 1px solid var(--muted);">
+            hello@suryanshseth.com
+          </a>
+        </p>
+      </article>
+
+      <article class="cell">
+        <div class="cell-badge">2</div>
+        <h2 class="cell-title">Network Nodes</h2>
+        <p style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://github.com/" target="_blank" rel="noopener" class="footer-nav-link">[ Github ]</a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" class="footer-nav-link">[ X ]</a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="footer-nav-link">[ LinkedIn ]</a>
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer-block fade-up delay-5">
+    <div class="meta-info" style="align-items: flex-start;">
+      <div class="meta-row" style="border: none; padding: 0;">
+        <span class="mono meta-label">SCALE</span>
+        <span class="mono-strong meta-value">1:1</span>
+      </div>
+      <div class="meta-row" style="border: none; padding: 0; margin-top: 0.25rem;">
+        <span class="mono meta-label">DRAWN BY</span>
+        <span class="mono-strong meta-value">S.S.</span>
+      </div>
+      <div class="meta-row" style="border: none; padding: 0; margin-top: 0.25rem;">
+        <span class="mono meta-label">DATE</span>
+        <span class="mono-strong meta-value">2026</span>
+      </div>
+    </div>
+    
+    <nav class="footer-nav">
+      <a href="https://github.com/" target="_blank" rel="noopener">[ Github ]</a>
+      <a href="https://twitter.com/" target="_blank" rel="noopener">[ X ]</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener">[ LinkedIn ]</a>
+    </nav>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contact-form');
+      const confirmation = document.getElementById('form-confirmation');
+      const submitBtn = document.getElementById('submit-btn');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Simulate processing
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Processing...';
+        
+        setTimeout(() => {
+          // Show confirmation and reset
+          confirmation.style.display = 'block';
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Transmit Message';
+          
+          // Hide confirmation after 4 seconds
+          setTimeout(() => {
+            confirmation.style.display = 'none';
+          }, 4000);
+        }, 600);
+      });
+    });
+  </script>
+
+</body>
+</html>
